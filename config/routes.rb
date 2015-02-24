@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root "pages#home"
+  get "about" => "pages#about" 
+  # remeber that to make a page I have to add it to the controler, add a view, then do the process here
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
