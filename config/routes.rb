@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" 
   # remeber that to make a page I have to add it to the controler, add a view, then do the process here

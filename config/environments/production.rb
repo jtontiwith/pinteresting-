@@ -75,4 +75,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+#required for heroku, and it's step one of instructions when installing devise, here it must match host name
+  config.action_mailer.default_url_options = { host: 'learningdev.herokuapp.com', port: 3000 }
+
 end
