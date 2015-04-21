@@ -79,4 +79,16 @@ Rails.application.configure do
 #required for heroku, and it's step one of instructions when installing devise, here it must match host name
   config.action_mailer.default_url_options = { host: 'learningdev.herokuapp.com', port: 3000 }
 
+  #sets paperclip to upload images to Amazon
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
+
+
+
 end
