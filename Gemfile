@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+ruby "2.2.2"
 
 gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.3'
@@ -13,7 +13,10 @@ gem "devise", "~> 3.4.1"
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 2.0.39' 
 
-#"paperclip", "~> 3.0"
+
+# 'paperclip', github: 'thoughtbot/paperclip'
+# "paperclip", "~> 3.0"
+
 
 
 
