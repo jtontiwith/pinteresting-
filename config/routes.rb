@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home"
+  root "pins#index"
   get "about" => "pages#about" 
   # remeber that to make a page I have to add it to the controler, add a view, then do the process here
   # The priority is based upon order of creation: first created -> highest priority.
